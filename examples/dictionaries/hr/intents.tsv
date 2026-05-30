@@ -1,0 +1,191 @@
+# HR Domain Intent Dictionary
+# Format: INTENT_NAME<TAB>発話例
+# Encoding: UTF-8
+
+# ── 有給・休暇申請 ────────────────────────────────────────────────
+LEAVE_REQUEST	来週月曜日から3日間有給休暇を取りたいのですが申請方法を教えてください
+LEAVE_REQUEST	12月24日から12月26日まで年次有給を申請したい
+LEAVE_REQUEST	来月の頭に1週間夏季休暇を取得したい
+LEAVE_REQUEST	慶弔休暇を申請したいのですが手続きはどうすればいいですか
+LEAVE_REQUEST	産休・育休に入る予定なので休暇の申請をしたい
+LEAVE_REQUEST	代休が2日残っているので今週金曜日に消化したい
+LEAVE_REQUEST	特別休暇を利用したいです。申請フォームはどこですか
+LEAVE_REQUEST	急遽体調不良で明日から有給を取得したい
+LEAVE_REQUEST	年末に有給を3日連続取得したいが空き状況を確認してほしい
+LEAVE_REQUEST	介護休暇の取得を検討しています。申請の流れを教えてください
+LEAVE_REQUEST	5月1日から1日の有給申請をお願いします
+LEAVE_REQUEST	結婚式のために特別休暇を申請したい
+
+# ── 有給残数・休暇残日数照会 ──────────────────────────────────────
+LEAVE_BALANCE_INQUIRY	現在の有給残日数を確認したい
+LEAVE_BALANCE_INQUIRY	今年の有給はあと何日残っていますか
+LEAVE_BALANCE_INQUIRY	代休の残りは何日ありますか
+LEAVE_BALANCE_INQUIRY	自分の年次有給残高を教えてください
+LEAVE_BALANCE_INQUIRY	有給の消滅期限っていつですか？残日数も教えてほしい
+LEAVE_BALANCE_INQUIRY	私の有給休暇の付与日数と取得済み日数を確認したい
+LEAVE_BALANCE_INQUIRY	今年度の休暇取得状況を知りたい
+LEAVE_BALANCE_INQUIRY	育休前に有給残日数を把握しておきたい
+LEAVE_BALANCE_INQUIRY	半休を使うと残日数はどう変わりますか
+LEAVE_BALANCE_INQUIRY	前期から繰り越された有給は何日ありますか
+LEAVE_BALANCE_INQUIRY	特別休暇の種別ごとの残り日数を見たい
+
+# ── 給与照会・明細 ────────────────────────────────────────────────
+PAYROLL_INQUIRY	今月の給与明細を確認したい
+PAYROLL_INQUIRY	先月の給与明細はどこで見られますか
+PAYROLL_INQUIRY	給料の振込日はいつですか
+PAYROLL_INQUIRY	3月分の給与明細をPDFで送ってほしい
+PAYROLL_INQUIRY	給与の控除内訳を確認したいのですが
+PAYROLL_INQUIRY	時間外手当が正しく反映されているか給与明細を見たい
+PAYROLL_INQUIRY	社会保険料の計算根拠を教えてください
+PAYROLL_INQUIRY	年収を確認したいのですがどこで見られますか
+PAYROLL_INQUIRY	賞与の支給額を確認したい
+PAYROLL_INQUIRY	給与明細に記載の交通費と実費が合っていないようです
+PAYROLL_INQUIRY	給与が想定より少ないので明細を確認したい
+PAYROLL_INQUIRY	住宅手当が正しく反映されているか確認したい
+
+# ── 経費精算 ──────────────────────────────────────────────────────
+EXPENSE_REIMBURSEMENT	先週の出張で使った経費3,200円を精算したい
+EXPENSE_REIMBURSEMENT	交通費の精算申請をしたいのですがどうすればいいですか
+EXPENSE_REIMBURSEMENT	経費精算フォームを教えてください
+EXPENSE_REIMBURSEMENT	領収書をなくしてしまいましたが経費申請できますか
+EXPENSE_REIMBURSEMENT	接待費12,500円の精算を申請したい
+EXPENSE_REIMBURSEMENT	出張費の精算期限はいつまでですか
+EXPENSE_REIMBURSEMENT	立替払いした経費の戻しはいつ振り込まれますか
+EXPENSE_REIMBURSEMENT	タクシー代2,800円を経費で落としたい
+EXPENSE_REIMBURSEMENT	経費精算の承認ステータスを確認したい
+EXPENSE_REIMBURSEMENT	セミナー参加費5,000円を会社負担にしてもらいたい
+EXPENSE_REIMBURSEMENT	経費申請が差し戻されました。理由と再申請方法を教えてください
+
+# ── 勤怠修正 ──────────────────────────────────────────────────────
+ATTENDANCE_CORRECTION	昨日の出勤時刻を打ち忘れたので修正したい
+ATTENDANCE_CORRECTION	退勤打刻のミスがありました。正しい時刻に直してほしい
+ATTENDANCE_CORRECTION	先週水曜日の勤怠記録が間違っています。修正依頼をしたい
+ATTENDANCE_CORRECTION	在宅勤務の勤怠が正しく登録されていないので直してください
+ATTENDANCE_CORRECTION	時間外勤務の実績が反映されていません。確認をお願いします
+ATTENDANCE_CORRECTION	深夜残業の勤怠入力を忘れてしまいました
+ATTENDANCE_CORRECTION	フレックスの勤怠記録を修正したい
+ATTENDANCE_CORRECTION	有給申請済みなのに欠勤扱いになっています
+ATTENDANCE_CORRECTION	出張中の移動時間が勤務時間に入っていません
+ATTENDANCE_CORRECTION	勤怠の修正申請フォームはどこにありますか
+ATTENDANCE_CORRECTION	先月の勤怠集計に誤りがあります
+
+# ── 入社手続き・オンボーディング ────────────────────────────────
+ONBOARDING	来月入社予定の新入社員ですが必要書類を教えてください
+ONBOARDING	オンボーディング研修のスケジュールを確認したい
+ONBOARDING	入社手続きで提出が必要な書類リストを送ってほしい
+ONBOARDING	マイナンバーの提出方法を教えてください
+ONBOARDING	社員証や備品の受け取りはどこで行いますか
+ONBOARDING	PCや社用メールのセットアップ手順を知りたい
+ONBOARDING	入社誓約書はいつまでに提出する必要がありますか
+ONBOARDING	扶養控除等申告書はいつ提出すればよいですか
+ONBOARDING	健康保険や厚生年金の手続き方法を教えてください
+ONBOARDING	試用期間の条件と終了後の手続きについて知りたい
+ONBOARDING	新入社員向けのハンドブックや就業規則はどこで確認できますか
+ONBOARDING	メンター制度について詳しく教えてください
+
+# ── 退職手続き ────────────────────────────────────────────────────
+OFFBOARDING	退職を考えているのですが手続きの流れを教えてください
+OFFBOARDING	退職願と退職届の違いを教えてほしい
+OFFBOARDING	退職時に返却が必要なものは何ですか
+OFFBOARDING	離職票と退職証明書はいつ発行されますか
+OFFBOARDING	退職後の健康保険の継続手続きを知りたい
+OFFBOARDING	有給の消化と退職日の調整について相談したい
+OFFBOARDING	退職金の計算方法と支給時期を教えてください
+OFFBOARDING	退職後の源泉徴収票の受け取り方法を教えてください
+OFFBOARDING	業務引き継ぎのスケジュールについて人事と相談したい
+OFFBOARDING	退職後にiDeCo/確定拠出年金はどうなりますか
+OFFBOARDING	最終出勤日と有給消化期間の設定について相談したい
+
+# ── 福利厚生照会 ──────────────────────────────────────────────────
+BENEFITS_INQUIRY	会社の福利厚生制度を一覧で教えてください
+BENEFITS_INQUIRY	住宅手当の申請条件と金額を確認したい
+BENEFITS_INQUIRY	育児支援制度について詳しく教えてほしい
+BENEFITS_INQUIRY	財形貯蓄の加入や変更手続き方法を知りたい
+BENEFITS_INQUIRY	健康診断の受診方法と対象検査を教えてください
+BENEFITS_INQUIRY	持株会への加入を検討しています。条件を教えてください
+BENEFITS_INQUIRY	家族手当を受け取るための条件は何ですか
+BENEFITS_INQUIRY	カフェテリアプランのポイント残高を確認したい
+BENEFITS_INQUIRY	通勤手当の上限額と申請方法を教えてください
+BENEFITS_INQUIRY	リモートワーク手当は申請が必要ですか
+BENEFITS_INQUIRY	確定拠出年金の掛金を変更したい
+BENEFITS_INQUIRY	社員割引制度が利用できるサービスを知りたい
+
+# ── 研修申込 ──────────────────────────────────────────────────────
+TRAINING_ENROLLMENT	来月開催のリーダーシップ研修に申し込みたい
+TRAINING_ENROLLMENT	今期受講できる研修の一覧を見たい
+TRAINING_ENROLLMENT	英語研修プログラムへの参加を申請したい
+TRAINING_ENROLLMENT	eラーニングのアカウントが発行されていません
+TRAINING_ENROLLMENT	コンプライアンス研修の受講期限を確認したい
+TRAINING_ENROLLMENT	外部セミナーへの参加を会社として申請したい
+TRAINING_ENROLLMENT	資格取得支援制度を使いたいので手続きを教えてください
+TRAINING_ENROLLMENT	OJT担当者への研修スケジュールを確認したい
+TRAINING_ENROLLMENT	メンタルヘルス研修を受講したいのですが申し込み方法は
+TRAINING_ENROLLMENT	新任管理職向けの研修一覧を教えてほしい
+TRAINING_ENROLLMENT	技術スキルアップの外部研修費を会社に負担してもらいたい
+TRAINING_ENROLLMENT	研修キャンセルの手続き方法を教えてください
+
+# ── 人事評価 ──────────────────────────────────────────────────────
+PERFORMANCE_REVIEW	今期の目標設定シートはいつまでに提出すればよいですか
+PERFORMANCE_REVIEW	人事評価の評価基準を教えてください
+PERFORMANCE_REVIEW	自己評価の入力方法が分かりません
+PERFORMANCE_REVIEW	360度評価のフィードバックの記入期限を確認したい
+PERFORMANCE_REVIEW	評価結果のフィードバック面談はいつ実施されますか
+PERFORMANCE_REVIEW	今年度の評価スケジュールを教えてほしい
+PERFORMANCE_REVIEW	評価システムへのログインができません
+PERFORMANCE_REVIEW	昇格・昇給の評価基準を知りたい
+PERFORMANCE_REVIEW	前回の評価結果を確認したい
+PERFORMANCE_REVIEW	評価に異議がある場合の申し立て方法を教えてください
+PERFORMANCE_REVIEW	目標の途中変更は可能ですか。手続きを教えてください
+
+# ── 証明書発行 ────────────────────────────────────────────────────
+CERTIFICATE_REQUEST	社員番号EMP00321の在職証明書を発行してほしい
+CERTIFICATE_REQUEST	在職証明書が必要なのですがどのくらいで発行されますか
+CERTIFICATE_REQUEST	源泉徴収票を再発行してもらいたい
+CERTIFICATE_REQUEST	昨年度の源泉徴収票がまだ届いていません
+CERTIFICATE_REQUEST	住宅ローン審査用の収入証明書を発行してほしい
+CERTIFICATE_REQUEST	英文の在職証明書を発行してもらえますか
+CERTIFICATE_REQUEST	所得証明書はどこへ申請すればよいですか
+CERTIFICATE_REQUEST	給与証明書と在職証明書は違うものですか
+CERTIFICATE_REQUEST	雇用保険被保険者証の再交付をお願いしたい
+CERTIFICATE_REQUEST	在職証明書の発行依頼書はどこから入手できますか
+CERTIFICATE_REQUEST	育児休業給付金申請のための書類を発行してほしい
+CERTIFICATE_REQUEST	通勤手当の証明書が必要です
+
+# ── 個人情報変更 ──────────────────────────────────────────────────
+PERSONAL_INFO_UPDATE	引越したので住所変更の手続きをしたい
+PERSONAL_INFO_UPDATE	結婚して名前が変わりました。氏名変更の手続き方法を教えてください
+PERSONAL_INFO_UPDATE	扶養家族が増えたので申告の変更をしたい
+PERSONAL_INFO_UPDATE	緊急連絡先の情報を更新したい
+PERSONAL_INFO_UPDATE	銀行口座の振込先を変更したい
+PERSONAL_INFO_UPDATE	マイナンバーの情報を更新してほしい
+PERSONAL_INFO_UPDATE	通勤定期の経路が変わったので交通費を変更申請したい
+PERSONAL_INFO_UPDATE	配偶者の扶養に関する申告書を提出したい
+PERSONAL_INFO_UPDATE	保険の受取人を変更したい
+PERSONAL_INFO_UPDATE	個人情報の変更申請にはどんな書類が必要ですか
+PERSONAL_INFO_UPDATE	メールアドレスや内線番号を変更してほしい
+
+# ── 異動希望 ──────────────────────────────────────────────────────
+TRANSFER_REQUEST	希望する部署への異動を申請したい
+TRANSFER_REQUEST	社内公募制度に応募したいのですが手続きを教えてください
+TRANSFER_REQUEST	営業部から企画部への異動を希望しています
+TRANSFER_REQUEST	キャリア面談で異動希望を伝えたいのですがいつ実施されますか
+TRANSFER_REQUEST	転勤を希望しているのですが申請方法を教えてください
+TRANSFER_REQUEST	希望部署が募集しているか確認したい
+TRANSFER_REQUEST	グループ会社への出向を希望しています
+TRANSFER_REQUEST	異動希望の優先順位の書き方を教えてください
+TRANSFER_REQUEST	海外赴任に興味があります。応募方法を教えてください
+TRANSFER_REQUEST	社内FA制度の詳細と応募期間を知りたい
+TRANSFER_REQUEST	現在の部署で異動希望を提出した場合、上司に知られますか
+
+# ── 採用・求人依頼 ────────────────────────────────────────────────
+RECRUITMENT_REQUEST	我々のチームに新しいメンバーを採用したいので手続きを教えてください
+RECRUITMENT_REQUEST	求人票の作成依頼をしたいのですがどこに連絡すればよいですか
+RECRUITMENT_REQUEST	中途採用の採用要件書を人事に提出したい
+RECRUITMENT_REQUEST	インターンシップの受け入れをしたいのですが手続きは
+RECRUITMENT_REQUEST	面接官トレーニングを受けていないのですが受講方法を教えてください
+RECRUITMENT_REQUEST	採用予定人数の変更を申請したい
+RECRUITMENT_REQUEST	採用候補者の選考スケジュールを調整したい
+RECRUITMENT_REQUEST	採用予算の確認と申請方法を教えてください
+RECRUITMENT_REQUEST	派遣社員の受け入れ手続きを知りたい
+RECRUITMENT_REQUEST	採用活動の進捗状況を確認したい
+RECRUITMENT_REQUEST	リファラル採用制度を使って知人を紹介したい

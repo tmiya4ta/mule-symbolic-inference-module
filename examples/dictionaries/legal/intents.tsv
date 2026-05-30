@@ -1,0 +1,175 @@
+# 法務ドメイン意図辞書 — 書式: <INTENT>\t<発話例>
+# 空行と # 始まり行は無視される。
+
+# CONTRACT_REVIEW: 契約書レビュー依頼
+CONTRACT_REVIEW	契約書のレビューをお願いしたいのですが
+CONTRACT_REVIEW	契約書C-2024-088の法務確認をお願いします
+CONTRACT_REVIEW	この契約書に問題がないか確認してほしい
+CONTRACT_REVIEW	相手方は株式会社ABCで、業務委託契約の内容を見てもらえますか
+CONTRACT_REVIEW	送付した契約書を読んでリスクを教えてください
+CONTRACT_REVIEW	契約書の内容チェックをお願いしたい
+CONTRACT_REVIEW	今週中に契約書のレビューをしていただけますか
+CONTRACT_REVIEW	契約書を見てもらって修正点があれば指摘してください
+CONTRACT_REVIEW	先方から受け取った契約書を法務に見てもらいたい
+CONTRACT_REVIEW	C-2025-112のレビューはいつ完了しますか
+CONTRACT_REVIEW	新しい業務委託契約書を確認してほしいです
+
+# CONTRACT_DRAFT: 契約書ドラフト作成
+CONTRACT_DRAFT	業務委託契約書のドラフトを作成してください
+CONTRACT_DRAFT	新しい取引先との売買契約書を作ってほしい
+CONTRACT_DRAFT	ライセンス契約書のひな型を用意していただけますか
+CONTRACT_DRAFT	相手方は有限会社XYZです。業務委託契約書を一から作りたい
+CONTRACT_DRAFT	秘密保持契約書のテンプレートを作成してください
+CONTRACT_DRAFT	契約書の草案を用意してほしいのですが
+CONTRACT_DRAFT	新規取引先向けに売買契約のドラフトをお願いします
+CONTRACT_DRAFT	契約書を一から起草してほしい
+CONTRACT_DRAFT	SaaS利用契約書のドラフトを作っていただけますか
+CONTRACT_DRAFT	業務委託契約のたたき台を作成してください
+CONTRACT_DRAFT	標準的な請負契約書のドラフトを出してほしい
+
+# NDA_REQUEST: 秘密保持契約（NDA）依頼
+NDA_REQUEST	NDAを締結したい
+NDA_REQUEST	秘密保持契約書を作成してください
+NDA_REQUEST	相手方は株式会社DEFです。NDAを用意してほしい
+NDA_REQUEST	情報開示前にNDAを交わしたい
+NDA_REQUEST	秘密保持契約を先方に送付したいので準備をお願いします
+NDA_REQUEST	新しいパートナーとNDAを締結する手続きを教えてください
+NDA_REQUEST	NDA締結の手順を案内してほしい
+NDA_REQUEST	機密情報を共有する前にNDAが必要です
+NDA_REQUEST	秘密保持誓約書を作ってもらえますか
+NDA_REQUEST	相互秘密保持契約書のドラフトをお願いします
+NDA_REQUEST	NDAがまだ未締結なので急ぎで対応してほしい
+
+# CONTRACT_STATUS: 契約ステータス照会
+CONTRACT_STATUS	契約番号C-2024-088の現在のステータスを教えてください
+CONTRACT_STATUS	先月依頼した契約書の進捗はどうなっていますか
+CONTRACT_STATUS	契約審査の状況を確認したい
+CONTRACT_STATUS	C-2025-003のレビューはどこまで進んでいますか
+CONTRACT_STATUS	依頼中の契約書が完了したか確認したい
+CONTRACT_STATUS	契約締結はいつ完了しますか
+CONTRACT_STATUS	今承認待ちになっている契約書はどれですか
+CONTRACT_STATUS	案件012の進捗状況を教えてください
+CONTRACT_STATUS	締結済みかどうか確認させてください
+CONTRACT_STATUS	契約書の審査状況をステータスで確認したい
+CONTRACT_STATUS	先週提出した契約はまだ確認中ですか
+
+# LEGAL_CONSULTATION: 法務相談
+LEGAL_CONSULTATION	法務に相談したいことがあります
+LEGAL_CONSULTATION	契約内容について法律的に問題がないか聞きたい
+LEGAL_CONSULTATION	法務担当者と話せますか
+LEGAL_CONSULTATION	取引先とのトラブルについて相談に乗ってほしい
+LEGAL_CONSULTATION	契約条件の解釈について法務の見解を聞かせてください
+LEGAL_CONSULTATION	法的なリスクについて意見をもらいたい
+LEGAL_CONSULTATION	法務の担当者にアポを取りたいのですが
+LEGAL_CONSULTATION	今後の事業展開について法的な観点からアドバイスが欲しい
+LEGAL_CONSULTATION	契約の解釈で疑問点があるので相談させてください
+LEGAL_CONSULTATION	法務部に質問があります。いつ話せますか
+LEGAL_CONSULTATION	法律面でアドバイスをもらえますか
+
+# COMPLIANCE_CHECK: コンプライアンス確認
+COMPLIANCE_CHECK	この施策はコンプライアンス上問題ないでしょうか
+COMPLIANCE_CHECK	キャンペーン内容がコンプライアンスに違反しないか確認してほしい
+COMPLIANCE_CHECK	新しい業務フローが社内規程に沿っているか確認をお願いします
+COMPLIANCE_CHECK	この広告表現は景品表示法に抵触しませんか
+COMPLIANCE_CHECK	インサイダー取引規制に関して確認したいことがあります
+COMPLIANCE_CHECK	コンプライアンスチェックをお願いしたい
+COMPLIANCE_CHECK	独占禁止法に違反しないか教えてください
+COMPLIANCE_CHECK	輸出管理規制への対応について確認したい
+COMPLIANCE_CHECK	この契約条件は下請法に問題ありませんか
+COMPLIANCE_CHECK	新商品の販売方法についてコンプライアンス上の懸念を相談したい
+COMPLIANCE_CHECK	贈収賄防止ポリシーに照らして問題がないか確認してほしい
+
+# IP_TRADEMARK_PATENT: 知的財産・商標・特許
+IP_TRADEMARK_PATENT	商標登録の手続きについて教えてください
+IP_TRADEMARK_PATENT	特許を取得したいのですが手順を教えてほしい
+IP_TRADEMARK_PATENT	弊社のロゴを商標として登録したい
+IP_TRADEMARK_PATENT	先行技術調査を依頼したいです
+IP_TRADEMARK_PATENT	競合他社が弊社の特許を侵害している疑いがあります
+IP_TRADEMARK_PATENT	著作権の帰属について確認させてください
+IP_TRADEMARK_PATENT	新製品名の商標を調べてほしい
+IP_TRADEMARK_PATENT	特許出願の準備をしたいので手順を案内してください
+IP_TRADEMARK_PATENT	ライセンス契約で知的財産権の扱いを明確にしてほしい
+IP_TRADEMARK_PATENT	ブランド名が他社商標と類似していないか調べてください
+IP_TRADEMARK_PATENT	特許庁への出願書類の準備を手伝ってほしい
+
+# DISPUTE_LITIGATION: 訴訟・紛争対応
+DISPUTE_LITIGATION	取引先から訴状が届きました
+DISPUTE_LITIGATION	契約違反で相手方と紛争になっています
+DISPUTE_LITIGATION	CASE-2025-007の対応状況を教えてください
+DISPUTE_LITIGATION	損害賠償請求を受けた場合の対応を教えてほしい
+DISPUTE_LITIGATION	訴訟になる前に和解交渉をしたいのですが
+DISPUTE_LITIGATION	内容証明郵便を受け取りました。どう対応すればいいですか
+DISPUTE_LITIGATION	仲裁手続きについて相談したい
+DISPUTE_LITIGATION	紛争案件015の弁護士費用の見通しを教えてください
+DISPUTE_LITIGATION	相手方に対して法的措置を取りたい
+DISPUTE_LITIGATION	クレームが来ましたが訴訟リスクはありますか
+DISPUTE_LITIGATION	裁判所から呼出状が届きました。至急相談したい
+
+# PRIVACY_GDPR: 個人情報・プライバシー・GDPR対応
+PRIVACY_GDPR	個人情報の取り扱いについて確認したい
+PRIVACY_GDPR	GDPRに対応した同意取得フローを作りたい
+PRIVACY_GDPR	海外に個人データを移転してよいですか
+PRIVACY_GDPR	プライバシーポリシーを改定したいので確認してほしい
+PRIVACY_GDPR	データ漏洩が発生した場合の対応手順を教えてください
+PRIVACY_GDPR	個人情報保護法の改正に合わせて対応が必要ですか
+PRIVACY_GDPR	EU拠点のユーザーデータの扱いについてGDPRの観点で相談したい
+PRIVACY_GDPR	DPA（データ処理契約）の締結が必要でしょうか
+PRIVACY_GDPR	個人情報の第三者提供に同意が必要かどうか確認したい
+PRIVACY_GDPR	プライバシーバイデザインの観点でシステム設計をチェックしてほしい
+PRIVACY_GDPR	情報主体から開示請求が来た場合の対応を教えてください
+
+# INTERNAL_POLICY: 社内規程照会
+INTERNAL_POLICY	社内の契約締結権限規程を確認したい
+INTERNAL_POLICY	印章管理規程はどこにありますか
+INTERNAL_POLICY	贈答品の受け取りに関する社内規定を教えてください
+INTERNAL_POLICY	利益相反ポリシーの内容を知りたい
+INTERNAL_POLICY	取締役会決議が必要な契約の金額基準を教えてください
+INTERNAL_POLICY	ハラスメント防止規程を確認したい
+INTERNAL_POLICY	情報セキュリティポリシーはどこで見られますか
+INTERNAL_POLICY	与信管理規程の最新版を見せてください
+INTERNAL_POLICY	社内規程に従った承認フローを教えてほしい
+INTERNAL_POLICY	接待・交際費に関する社内ルールを確認したい
+INTERNAL_POLICY	個人情報管理規程の最新版はどこですか
+
+# CONTRACT_RENEWAL: 契約更新・期限管理
+CONTRACT_RENEWAL	2026-03-31が期限の契約が更新できるか確認したい
+CONTRACT_RENEWAL	来月末に契約満了になる件を更新したいです
+CONTRACT_RENEWAL	C-2024-045の自動更新をストップしてほしい
+CONTRACT_RENEWAL	契約更新の手続きを教えてください
+CONTRACT_RENEWAL	期限が迫っている契約書の一覧を教えてほしい
+CONTRACT_RENEWAL	今年度末に満了する契約をリストアップしてください
+CONTRACT_RENEWAL	契約を3年間延長したい
+CONTRACT_RENEWAL	更新交渉を始めるタイミングを教えてください
+CONTRACT_RENEWAL	有限会社XYZとの保守契約を2026-12-31まで延長したい
+CONTRACT_RENEWAL	自動更新停止の手続きを取ってほしい
+CONTRACT_RENEWAL	満了日が2026-06-30の契約の更新連絡はいつしますか
+
+# SEAL_APPROVAL: 押印・承認依頼
+SEAL_APPROVAL	契約書に社印を押してほしい
+SEAL_APPROVAL	押印申請を出したいのですが手順を教えてください
+SEAL_APPROVAL	代表者印の捺印をお願いしたい
+SEAL_APPROVAL	電子署名で対応できますか
+SEAL_APPROVAL	承認フローに乗せるので確認をお願いします
+SEAL_APPROVAL	契約書の決裁をお願いしたい
+SEAL_APPROVAL	社内押印規程に従って押印してほしい
+SEAL_APPROVAL	3通の契約書に捺印をお願いします
+SEAL_APPROVAL	電子契約サービスで署名してもらえますか
+SEAL_APPROVAL	社長印が必要な書類があります
+SEAL_APPROVAL	承認権者に稟議を上げてほしい
+
+# CREDIT_CHECK: 与信・反社チェック
+CREDIT_CHECK	新規取引先の与信調査をお願いします
+CREDIT_CHECK	反社チェックをしてほしい
+CREDIT_CHECK	株式会社GHIとの取引前に与信を確認したい
+CREDIT_CHECK	相手方が反社会的勢力でないか調べてほしい
+CREDIT_CHECK	与信限度額の設定について相談したい
+CREDIT_CHECK	取引先の信用調査を依頼したい
+CREDIT_CHECK	暴力団関係者でないか確認してください
+CREDIT_CHECK	反社データベースへの照会をお願いします
+CREDIT_CHECK	新規仕入先の審査を進めてほしい
+CREDIT_CHECK	与信審査の結果はいつ出ますか
+CREDIT_CHECK	取引先の与信枠を拡大したいので調査をお願いします
+DISPUTE_LITIGATION	訴訟対応の進捗を教えて
+DISPUTE_LITIGATION	紛争案件の対応状況を確認したい
+DISPUTE_LITIGATION	訴訟の進捗状況を知りたい
+DISPUTE_LITIGATION	係争中の案件の進み具合を教えて

@@ -1,0 +1,175 @@
+# 在庫管理ドメイン 意図辞書 — 書式: <INTENT>\t<発話例>
+# 空行と # 始まり行は無視される。
+
+# INVENTORY_CHECK: 在庫照会（SKU・商品の現在庫数確認）
+INVENTORY_CHECK	SKU-10234の在庫を確認したい
+INVENTORY_CHECK	商品の在庫数を教えてください
+INVENTORY_CHECK	現在の在庫状況を確認したい
+INVENTORY_CHECK	この品番の残数はいくつですか
+INVENTORY_CHECK	品目コードABC-001の在庫を見たい
+INVENTORY_CHECK	在庫残高を照会する
+INVENTORY_CHECK	今いくつ残ってる?
+INVENTORY_CHECK	倉庫にどれだけ残っているか確認
+INVENTORY_CHECK	リアルタイム在庫を確認したい
+INVENTORY_CHECK	SKU-00987は何個ありますか
+INVENTORY_CHECK	商品XYZ-555の現在庫を調べてほしい
+
+# RECEIVE_STOCK: 入荷・入庫登録（実際の入庫処理）
+RECEIVE_STOCK	入荷処理をしたい
+RECEIVE_STOCK	商品が届いたので入庫登録する
+RECEIVE_STOCK	SKU-30021を50個受け入れたい
+RECEIVE_STOCK	今日入ってきた荷物を登録してください
+RECEIVE_STOCK	入庫を記録したい
+RECEIVE_STOCK	受領した商品を棚に入れる
+RECEIVE_STOCK	仕入れた在庫を追加してほしい
+RECEIVE_STOCK	品番DEF-099、200個入荷しました
+RECEIVE_STOCK	入庫確認と数量登録をお願いします
+RECEIVE_STOCK	倉庫への受け入れ処理を行いたい
+RECEIVE_STOCK	東京倉庫に100個入庫します
+
+# INCOMING_SCHEDULE: 入荷予定・発注済み入荷予定の確認
+INCOMING_SCHEDULE	入荷予定を教えてください
+INCOMING_SCHEDULE	いつ入荷しますか
+INCOMING_SCHEDULE	SKU-44100の入荷スケジュールを確認したい
+INCOMING_SCHEDULE	今月の入荷予定一覧を見たい
+INCOMING_SCHEDULE	仕入れ予定の到着日を確認する
+INCOMING_SCHEDULE	発注済み商品はいつ届きますか
+INCOMING_SCHEDULE	入荷予定日をカレンダーで見せて
+INCOMING_SCHEDULE	次回の入荷はいつになりますか
+INCOMING_SCHEDULE	品番GHI-201の到着見込みを教えて
+INCOMING_SCHEDULE	今週入荷する商品を一覧表示して
+INCOMING_SCHEDULE	未着の発注品の予定日を出してほしい
+
+# ISSUE_STOCK: 出庫・出荷処理（在庫引き出し・発送指示）
+ISSUE_STOCK	出庫処理をお願いします
+ISSUE_STOCK	東京倉庫から50個出庫して
+ISSUE_STOCK	商品を出荷したい
+ISSUE_STOCK	SKU-20033を30個出して
+ISSUE_STOCK	今日分の出庫伝票を作成してください
+ISSUE_STOCK	この注文番号1234の商品を出荷指示してほしい
+ISSUE_STOCK	在庫から引き出す処理をしたい
+ISSUE_STOCK	大阪倉庫から出庫する
+ISSUE_STOCK	出庫記録をつけてください
+ISSUE_STOCK	商品を棚から出して出荷準備したい
+ISSUE_STOCK	品番JKL-305を5個出庫登録する
+
+# STOCK_ADJUSTMENT: 棚卸・在庫調整（帳簿と現物の差異修正）
+STOCK_ADJUSTMENT	棚卸をしたい
+STOCK_ADJUSTMENT	在庫の実数と帳簿が合わないので調整したい
+STOCK_ADJUSTMENT	在庫調整を登録してください
+STOCK_ADJUSTMENT	数え間違いがあったので修正する
+STOCK_ADJUSTMENT	棚卸差異を入力したい
+STOCK_ADJUSTMENT	現物確認後の在庫を更新してほしい
+STOCK_ADJUSTMENT	帳簿在庫と実在庫のズレを直したい
+STOCK_ADJUSTMENT	SKU-55210を棚卸して20個に修正する
+STOCK_ADJUSTMENT	在庫カウントを修正登録する
+STOCK_ADJUSTMENT	定期棚卸の結果を反映させたい
+STOCK_ADJUSTMENT	月末棚卸の数量を登録してください
+
+# WAREHOUSE_TRANSFER: 倉庫間移動・拠点間移送
+WAREHOUSE_TRANSFER	倉庫間移動をしたい
+WAREHOUSE_TRANSFER	東京倉庫から大阪倉庫へ商品を移したい
+WAREHOUSE_TRANSFER	SKU-70099を横浜倉庫へ転送してほしい
+WAREHOUSE_TRANSFER	拠点間の在庫移動を登録する
+WAREHOUSE_TRANSFER	福岡倉庫から名古屋倉庫へ100個移動したい
+WAREHOUSE_TRANSFER	倉庫移送の手続きをしたい
+WAREHOUSE_TRANSFER	在庫を別の倉庫に振り替えたい
+WAREHOUSE_TRANSFER	センター倉庫への移送指示を出して
+WAREHOUSE_TRANSFER	倉庫移動伝票を作成してください
+WAREHOUSE_TRANSFER	大阪倉庫から30個を関西倉庫に移す
+WAREHOUSE_TRANSFER	品番MNO-120を仙台倉庫から東京倉庫へ移動する
+
+# STOCK_RESERVATION: 引当・予約（特定注文や案件への在庫確保）
+STOCK_RESERVATION	在庫を引き当てたい
+STOCK_RESERVATION	この注文5678のために在庫を確保してほしい
+STOCK_RESERVATION	商品を特定案件向けに予約したい
+STOCK_RESERVATION	SKU-88321を50個引き当ててください
+STOCK_RESERVATION	受注分の在庫を押さえておきたい
+STOCK_RESERVATION	特定顧客向けに在庫を取り置きしたい
+STOCK_RESERVATION	注文番号9012の商品をロックして
+STOCK_RESERVATION	引当処理をお願いします
+STOCK_RESERVATION	在庫予約を登録したい
+STOCK_RESERVATION	出荷前に在庫を確保する手続きをしたい
+STOCK_RESERVATION	品番PQR-445をキャンペーン用に確保する
+
+# REORDER_ALERT: 発注点・欠品アラート確認（在庫が閾値以下の商品チェック）
+REORDER_ALERT	発注点を下回っている商品を教えてください
+REORDER_ALERT	欠品しそうな商品のアラートを確認したい
+REORDER_ALERT	在庫が少ない商品一覧を出してほしい
+REORDER_ALERT	補充が必要な商品はどれですか
+REORDER_ALERT	在庫切れ寸前の品目を教えて
+REORDER_ALERT	発注アラートを確認する
+REORDER_ALERT	安全在庫を割った商品を一覧で見たい
+REORDER_ALERT	欠品リスクがある品番を教えてください
+REORDER_ALERT	発注点以下の在庫を全部出して
+REORDER_ALERT	要補充品目を確認したい
+REORDER_ALERT	棚が空になりそうな商品を教えて
+
+# LOCATION_INQUIRY: ロケーション照会（商品の棚番・保管場所確認）
+LOCATION_INQUIRY	この商品はどの棚にありますか
+LOCATION_INQUIRY	SKU-11005のロケーションを教えて
+LOCATION_INQUIRY	商品の保管場所を確認したい
+LOCATION_INQUIRY	棚番号を調べたい
+LOCATION_INQUIRY	A3-045にある商品を教えてほしい
+LOCATION_INQUIRY	品番STU-667はどこに置いてありますか
+LOCATION_INQUIRY	ピッキング場所を確認したい
+LOCATION_INQUIRY	ロケーション照会をしたい
+LOCATION_INQUIRY	どのエリアにこの商品が保管されていますか
+LOCATION_INQUIRY	倉庫内の保管位置を知りたい
+LOCATION_INQUIRY	B1-012の棚に何が入っていますか
+
+# LOT_EXPIRY_CHECK: ロット・賞味期限管理（ロット追跡・期限切れ確認）
+LOT_EXPIRY_CHECK	賞味期限が近い商品を教えてください
+LOT_EXPIRY_CHECK	ロット番号LOT-20240501の在庫を確認したい
+LOT_EXPIRY_CHECK	期限切れ間近の在庫を一覧で見たい
+LOT_EXPIRY_CHECK	ロット管理情報を照会する
+LOT_EXPIRY_CHECK	LOT-A12345はどこにありますか
+LOT_EXPIRY_CHECK	有効期限が切れた商品はありますか
+LOT_EXPIRY_CHECK	特定ロットの在庫数と保管場所を教えて
+LOT_EXPIRY_CHECK	期限切れ在庫を確認したい
+LOT_EXPIRY_CHECK	先入先出で出庫すべきロットを教えて
+LOT_EXPIRY_CHECK	ロットトレーサビリティを確認したい
+LOT_EXPIRY_CHECK	2024/12/31までに期限が来る商品を出して
+
+# RETURN_RECEIVE: 返品入庫（顧客から戻ってきた商品の受け入れ処理）
+RETURN_RECEIVE	返品を受け入れたい
+RETURN_RECEIVE	お客様から返ってきた商品を入庫する
+RETURN_RECEIVE	返品処理を登録してください
+RETURN_RECEIVE	返却された商品を在庫に戻したい
+RETURN_RECEIVE	返品伝票を作成してほしい
+RETURN_RECEIVE	クレーム品の返品入庫をしたい
+RETURN_RECEIVE	不良品が返ってきたので在庫登録する
+RETURN_RECEIVE	注文8888の返品を受け入れます
+RETURN_RECEIVE	返送されてきた商品を棚に戻す手続き
+RETURN_RECEIVE	返品の在庫反映をお願いします
+RETURN_RECEIVE	顧客返品品の品質検査と入庫処理をしたい
+
+# INVENTORY_REPORT: 在庫レポート・分析（サマリ・推移・回転率など）
+INVENTORY_REPORT	在庫レポートを出してほしい
+INVENTORY_REPORT	今月の在庫推移を確認したい
+INVENTORY_REPORT	在庫回転率のレポートを見たい
+INVENTORY_REPORT	倉庫別の在庫サマリを作成して
+INVENTORY_REPORT	月次在庫レポートを発行してください
+INVENTORY_REPORT	在庫評価額を集計したい
+INVENTORY_REPORT	滞留在庫の分析をしてほしい
+INVENTORY_REPORT	在庫分析レポートをダウンロードしたい
+INVENTORY_REPORT	カテゴリ別の在庫状況を報告して
+INVENTORY_REPORT	週次在庫サマリーを見たい
+INVENTORY_REPORT	在庫過多・不足の分析結果を出して
+
+# DISPOSAL: 廃棄処理（不良品・期限切れ在庫の廃棄登録）
+DISPOSAL	在庫を廃棄したい
+DISPOSAL	期限切れ商品を廃棄処理してください
+DISPOSAL	不良品を廃棄登録したい
+DISPOSAL	廃棄伝票を作成してほしい
+DISPOSAL	使用不能な在庫を除却したい
+DISPOSAL	SKU-99001の期限切れ品を廃棄する
+DISPOSAL	破損した商品を在庫から除いてください
+DISPOSAL	廃棄処理の手続きを教えて
+DISPOSAL	廃棄数量を登録したい
+DISPOSAL	不用在庫の除却処理をしたい
+DISPOSAL	棚卸減耗として廃棄を記録したい
+INCOMING_SCHEDULE	入荷予定日を確認したい
+INCOMING_SCHEDULE	いつ入荷予定か知りたい
+INCOMING_SCHEDULE	入荷は予定通りか確認したい
+INCOMING_SCHEDULE	次回の入荷予定を教えて

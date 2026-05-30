@@ -1,0 +1,184 @@
+# 調達/購買 意図辞書 — 書式: <INTENT>\t<発話例>
+# 空行と # 始まり行は無視される。
+
+# CREATE_PURCHASE_REQUEST: 購買依頼(PR)作成
+CREATE_PURCHASE_REQUEST	購買依頼を作成したい
+CREATE_PURCHASE_REQUEST	PRを新規登録してください
+CREATE_PURCHASE_REQUEST	品物を購入するための申請を出したい
+CREATE_PURCHASE_REQUEST	購買申請を起票してほしい
+CREATE_PURCHASE_REQUEST	消耗品の購入依頼を出したい
+CREATE_PURCHASE_REQUEST	備品調達の申請をしたい
+CREATE_PURCHASE_REQUEST	購買リクエストを登録する
+CREATE_PURCHASE_REQUEST	新しいPRを起こしてください
+CREATE_PURCHASE_REQUEST	部品の購入申請を出したい
+CREATE_PURCHASE_REQUEST	購買依頼書を作成してほしい
+CREATE_PURCHASE_REQUEST	発注前の購買申請を作りたい
+
+# CREATE_PURCHASE_ORDER: 発注書(PO)作成
+CREATE_PURCHASE_ORDER	発注書を作成してください
+CREATE_PURCHASE_ORDER	POを起票したい
+CREATE_PURCHASE_ORDER	購入注文書を発行したい
+CREATE_PURCHASE_ORDER	サプライヤーへの発注書を作りたい
+CREATE_PURCHASE_ORDER	取引先に注文書を送りたい
+CREATE_PURCHASE_ORDER	POを新規登録してほしい
+CREATE_PURCHASE_ORDER	PR-20240056を発注書に変えてほしい
+CREATE_PURCHASE_ORDER	承認済みの購買依頼から発注書を作成したい
+CREATE_PURCHASE_ORDER	発注オーダーを起こしてください
+CREATE_PURCHASE_ORDER	S00456に対して発注書を作成したい
+CREATE_PURCHASE_ORDER	注文書を発行してください
+
+# CHECK_ORDER_STATUS: 発注状況確認
+CHECK_ORDER_STATUS	発注の状況を確認したい
+CHECK_ORDER_STATUS	PO-2024-0012の進捗を教えてください
+CHECK_ORDER_STATUS	注文書のステータスはどうなっていますか
+CHECK_ORDER_STATUS	今の発注状況を見たい
+CHECK_ORDER_STATUS	PO-20240088は承認されましたか
+CHECK_ORDER_STATUS	発注書がどこまで進んでいるか知りたい
+CHECK_ORDER_STATUS	未完了の発注一覧を出してほしい
+CHECK_ORDER_STATUS	オーダーの承認状況を確認したい
+CHECK_ORDER_STATUS	発注済みの案件のステータスを見せて
+CHECK_ORDER_STATUS	S00123への発注はどうなっていますか
+CHECK_ORDER_STATUS	注文の処理状況を教えて
+
+# RECEIVE_GOODS: 検収/入荷処理
+RECEIVE_GOODS	商品を受け取ったので検収処理をしたい
+RECEIVE_GOODS	入荷の登録をお願いします
+RECEIVE_GOODS	納品物を検収処理してほしい
+RECEIVE_GOODS	荷物が届いたので入荷確認をしたい
+RECEIVE_GOODS	PO-2024-0035の品物が届きました
+RECEIVE_GOODS	受領確認を登録してください
+RECEIVE_GOODS	検収完了を記録したい
+RECEIVE_GOODS	納入品の受取処理をしてほしい
+RECEIVE_GOODS	品物が揃ったので入荷処理をしたい
+RECEIVE_GOODS	製品の受領登録をお願いします
+RECEIVE_GOODS	入荷検査が終わったので登録したい
+
+# REGISTER_SUPPLIER: 取引先登録
+REGISTER_SUPPLIER	新しいサプライヤーを登録したい
+REGISTER_SUPPLIER	取引先を新規登録してほしい
+REGISTER_SUPPLIER	仕入先情報をシステムに追加したい
+REGISTER_SUPPLIER	ベンダー登録の手続きを教えてください
+REGISTER_SUPPLIER	新規取引業者を登録したい
+REGISTER_SUPPLIER	サプライヤーマスタに追加してほしい
+REGISTER_SUPPLIER	取引先の会社情報を登録する
+REGISTER_SUPPLIER	新しい仕入先を申請したい
+REGISTER_SUPPLIER	協力会社を取引先として登録したい
+REGISTER_SUPPLIER	ベンダーコードを発行してほしい
+REGISTER_SUPPLIER	取引先マスタへの追加申請をしたい
+
+# SEARCH_SUPPLIER: 取引先照会
+SEARCH_SUPPLIER	サプライヤーの情報を調べたい
+SEARCH_SUPPLIER	S00123の取引先詳細を教えてください
+SEARCH_SUPPLIER	取引先一覧を確認したい
+SEARCH_SUPPLIER	仕入先の連絡先を調べてほしい
+SEARCH_SUPPLIER	ベンダー情報を検索したい
+SEARCH_SUPPLIER	このサプライヤーの支払条件を確認したい
+SEARCH_SUPPLIER	取引先の登録情報を見せてほしい
+SEARCH_SUPPLIER	承認済みの仕入先リストを出して
+SEARCH_SUPPLIER	S00789の会社概要を知りたい
+SEARCH_SUPPLIER	特定取引先の評価スコアを確認したい
+SEARCH_SUPPLIER	サプライヤーコードから会社を検索して
+
+# REQUEST_FOR_QUOTATION: 見積依頼(RFQ)
+REQUEST_FOR_QUOTATION	見積依頼を送りたい
+REQUEST_FOR_QUOTATION	RFQを作成してください
+REQUEST_FOR_QUOTATION	サプライヤーS00123に見積依頼をしたい
+REQUEST_FOR_QUOTATION	複数社に見積もりを依頼したい
+REQUEST_FOR_QUOTATION	見積書の提出を依頼してほしい
+REQUEST_FOR_QUOTATION	品物の価格を問い合わせたい
+REQUEST_FOR_QUOTATION	見積依頼書を作って送ってください
+REQUEST_FOR_QUOTATION	S00456とS00789に同じ商品の見積もりを依頼したい
+REQUEST_FOR_QUOTATION	仕入先に価格見積もりを依頼したい
+REQUEST_FOR_QUOTATION	RFQを発行してほしい
+REQUEST_FOR_QUOTATION	品目IT-001の見積もりをお願いしたい
+
+# COMPARE_QUOTATIONS: 見積比較
+COMPARE_QUOTATIONS	複数の見積もりを比較したい
+COMPARE_QUOTATIONS	どの業者が一番安いか確認したい
+COMPARE_QUOTATIONS	見積比較表を作成してほしい
+COMPARE_QUOTATIONS	各社の見積金額を並べてみせて
+COMPARE_QUOTATIONS	最安値のサプライヤーはどこですか
+COMPARE_QUOTATIONS	価格と納期で見積もりを比較したい
+COMPARE_QUOTATIONS	受け取った見積もりを評価してほしい
+COMPARE_QUOTATIONS	見積回答を一覧で確認したい
+COMPARE_QUOTATIONS	コスト比較でベストサプライヤーを選びたい
+COMPARE_QUOTATIONS	入手した見積書を横並びで比べてほしい
+COMPARE_QUOTATIONS	見積金額の比較分析をしてください
+
+# RENEW_CONTRACT: 契約更新
+RENEW_CONTRACT	契約の更新手続きをしたい
+RENEW_CONTRACT	取引契約の期限が近いので更新したい
+RENEW_CONTRACT	S00123との契約を延長したい
+RENEW_CONTRACT	年間契約の更新申請を出してほしい
+RENEW_CONTRACT	契約書の更新をお願いします
+RENEW_CONTRACT	仕入先との契約期限を延長したい
+RENEW_CONTRACT	フレーム契約のリニューアルをしたい
+RENEW_CONTRACT	有効期限切れの契約を更新してほしい
+RENEW_CONTRACT	取引基本契約書を更新する手続きを教えて
+RENEW_CONTRACT	サプライヤー契約の自動更新を止めて手動更新したい
+RENEW_CONTRACT	契約更新の承認フローを開始してください
+
+# MATCH_INVOICE: 請求照合
+MATCH_INVOICE	請求書の照合をしたい
+MATCH_INVOICE	インボイスと発注書を突き合わせてほしい
+MATCH_INVOICE	請求金額と発注金額が合っているか確認したい
+MATCH_INVOICE	3-way matchingを実行してほしい
+MATCH_INVOICE	受け取った請求書を検証したい
+MATCH_INVOICE	請求書の差異を調べてほしい
+MATCH_INVOICE	PO-2024-0012に対する請求を照合して
+MATCH_INVOICE	支払い前に請求内容を確認したい
+MATCH_INVOICE	納品書と請求書と発注書を照合してください
+MATCH_INVOICE	請求照合の不一致を解消したい
+MATCH_INVOICE	インボイス検証処理をしてほしい
+
+# CHECK_DELIVERY_DATE: 納期確認・変更
+CHECK_DELIVERY_DATE	納期を確認したい
+CHECK_DELIVERY_DATE	PO-2024-0044はいつ届きますか
+CHECK_DELIVERY_DATE	納入予定日を教えてほしい
+CHECK_DELIVERY_DATE	配送スケジュールを確認したい
+CHECK_DELIVERY_DATE	注文した品物の入荷予定日は
+CHECK_DELIVERY_DATE	納期を変更してほしい
+CHECK_DELIVERY_DATE	サプライヤーに納期前倒しを依頼したい
+CHECK_DELIVERY_DATE	2024-12-01に納品できますか
+CHECK_DELIVERY_DATE	納入日の変更申請を出してほしい
+CHECK_DELIVERY_DATE	発注品の到着予定を教えて
+CHECK_DELIVERY_DATE	納品リードタイムを確認したい
+
+# CHECK_BUDGET: 予算確認
+CHECK_BUDGET	予算の残高を確認したい
+CHECK_BUDGET	今期の調達予算はいくら残っていますか
+CHECK_BUDGET	部門の購買予算状況を教えてほしい
+CHECK_BUDGET	予算超過しそうか確認したい
+CHECK_BUDGET	この発注は予算内に収まりますか
+CHECK_BUDGET	年間調達予算の使用率を知りたい
+CHECK_BUDGET	Q3の購買予算消化状況を見せて
+CHECK_BUDGET	コスト管理のため予算残額を調べたい
+CHECK_BUDGET	カテゴリ別の予算消化を確認したい
+CHECK_BUDGET	750,000円の発注で予算は足りますか
+CHECK_BUDGET	月次の予算レポートを出してほしい
+
+# REQUEST_APPROVAL: 承認依頼
+REQUEST_APPROVAL	承認をお願いしたい
+REQUEST_APPROVAL	購買申請の承認依頼を出してほしい
+REQUEST_APPROVAL	上長に承認を依頼してください
+REQUEST_APPROVAL	PR-20240099の承認を求めたい
+REQUEST_APPROVAL	発注前の承認ワークフローを開始したい
+REQUEST_APPROVAL	承認者に回覧してほしい
+REQUEST_APPROVAL	決裁を依頼したい
+REQUEST_APPROVAL	購買依頼の承認フローを回してほしい
+REQUEST_APPROVAL	緊急で承認をとりたい
+REQUEST_APPROVAL	このPOを上司に承認してもらいたい
+REQUEST_APPROVAL	承認依頼のリマインドを送ってほしい
+
+# REQUEST_PAYMENT: 支払依頼
+REQUEST_PAYMENT	支払い手続きをお願いしたい
+REQUEST_PAYMENT	請求書の支払い処理をしたい
+REQUEST_PAYMENT	S00123への支払いを依頼したい
+REQUEST_PAYMENT	インボイス照合済みなので支払いに進めてほしい
+REQUEST_PAYMENT	支払いを承認してください
+REQUEST_PAYMENT	月末支払いのバッチ処理をしたい
+REQUEST_PAYMENT	支払依頼書を作成してほしい
+REQUEST_PAYMENT	1,500,000円の支払い申請を出したい
+REQUEST_PAYMENT	支払スケジュールを確認して支払いを実行してほしい
+REQUEST_PAYMENT	期限前に支払いを済ませたい
+REQUEST_PAYMENT	支払い処理の状況を教えてください

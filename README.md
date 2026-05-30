@@ -62,6 +62,7 @@ The sweet spot is a **bounded, well‑defined set of intents** processed at high
 | [`intent-core/`](intent-core/) | **Zero‑dependency, pure‑Java inference core.** TF‑IDF cosine similarity, CJK bigram tokenizer, file‑driven dictionary. No Mule dependency, so it is unit‑testable on its own. |
 | [`mule-symbolic-inference-module/`](mule-symbolic-inference-module/) | **The Mule SDK extension** that wraps the core and exposes the `<infer:classify>` operation and `<infer:config>` configuration. |
 | [`examples/intent-sample-app/`](examples/intent-sample-app/) | A runnable sample Mule application exposing `POST /classify` over HTTP, using an extended dictionary (adds a `SHIPPING` intent and `quantity` / `phone` / `email` slots). |
+| [`examples/dictionaries/`](examples/dictionaries/) | **Production‑grade sample dictionaries** for 5 business domains — Inventory, Procurement, Legal, Incident/ITSM, HR (67 intents, 751 example utterances, 39 slot patterns). Point `dictionaryDir` at any of them. |
 
 ---
 

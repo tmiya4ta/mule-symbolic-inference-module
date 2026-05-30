@@ -1,0 +1,17 @@
+# 調達/購買 スロット定義 — 書式: <slotName>\t<正規表現>
+# キャプチャグループ(...)があれば group(1)、なければマッチ全体が値。
+
+# 発注書番号: PO-YYYY-NNNN または PO-NNNNN 形式
+poNumber	(PO-?\d{4,}(?:-\d+)?)
+# 購買依頼番号: PR-YYYYNNNN または PR-NNNNN 形式
+prNumber	(PR-?\d{4,}(?:-\d+)?)
+# サプライヤーコード: S + 4桁以上の数字
+supplierCode	(S\d{4,})
+# 金額: 数字（カンマ区切り可）+ 円
+amount	([0-9,]+)\s*円
+# 数量: 数字 + 単位（個/台/本/件/式）
+quantity	(\d+)\s*(?:個|台|本|件|式)
+# 日付: yyyy/mm/dd または yyyy-mm-dd
+date	(\d{4}[/-]\d{1,2}[/-]\d{1,2})
+# 品目コード: PO/PR以外の 2〜4英字 + ハイフン + 3桁以上数字
+itemCode	(?<![A-Z])(?!P[OR]-|PO\d|PR\d)([A-Z]{2,4}-\d{3,})

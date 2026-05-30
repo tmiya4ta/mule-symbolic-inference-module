@@ -1,0 +1,13 @@
+# HR Domain Slot Dictionary
+# Format: slotName<TAB>正規表現
+# group(1) if capture group present, else full match
+# Encoding: UTF-8
+
+employeeId	(EMP-?\d{3,6})
+date	(\d{4}[/-]\d{1,2}[/-]\d{1,2}|\d{1,2}[/-]\d{1,2}|(?:来週|今週|来月|今月|翌月)?(?:月曜|火曜|水曜|木曜|金曜|土曜|日曜|月曜日|火曜日|水曜日|木曜日|金曜日))
+days	(\d+)\s*日
+amount	([0-9,]+)\s*円
+leaveType	(有給|年次有給|特別休暇|慶弔休暇|代休|産休|育休|介護休暇|夏季休暇|年末年始休暇)
+department	([\p{IsHan}\p{IsKatakana}ー]{2,8}(?:部|課|室|グループ))
+fiscalYear	(\d{4}年度|今年度|前年度|昨年度|今期|前期|来期)
+certificateType	(在職証明書|源泉徴収票|収入証明書|給与証明書|所得証明書|雇用保険被保険者証|英文在職証明書)

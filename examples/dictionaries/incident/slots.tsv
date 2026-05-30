@@ -1,0 +1,13 @@
+# ITSM インシデント管理 スロット辞書
+# フォーマット: slotName<TAB>正規表現
+# group(1) があればその値、なければマッチ全体を返す
+# UTF-8 / タブ区切り
+
+incidentId	(INC-?\d{4,})
+priority	(P[1-5]|緊急|高|中|低)
+severity	(Sev\s?[1-4]|重大|軽微)
+service	(\S+(?:サービス|システム|API|サーバ))
+assignee	(?:担当(?:を|は)|アサイン(?:して|先))\s*(\S+?)(?:さん|に|へ|$)
+date	(\d{4}[/\-]\d{1,2}[/\-]\d{1,2})
+comment	(?:「|")(.+?)(?:」|")
+status	(オープン|クローズ|解決済み|対応中|Resolved|Closed|Open|In Progress)
