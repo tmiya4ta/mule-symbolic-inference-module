@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.demo</groupId>
+    <artifactId>mule-symbolic-inference-module</artifactId>
+    <version>0.1.0</version>
+    <packaging>mule-extension</packaging>
+
+    <name>Symbolic Inference Module</name>
+    <description>LLM不使用の記号的推論Muleモジュール（意図分類 + スロット抽出。intent-coreをラップ）</description>
+
+    <parent>
+        <groupId>org.mule.extensions</groupId>
+        <artifactId>mule-modules-parent</artifactId>
+        <version>1.9.8</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- 親POMがcompileフェーズに紐付けるCPALライセンスヘッダ検査をスキップ -->
+        <license.skip>true</license.skip>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.demo</groupId>
+            <artifactId>intent-core</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <!-- @JavaVersionSupport を使うため（親はmule-extensions-apiからsdk-apiを除外している） -->
+        <dependency>
+            <groupId>org.mule.sdk</groupId>
+            <artifactId>mule-sdk-api</artifactId>
+            <version>0.11.8</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>anypoint-exchange-v3</id>
+            <name>Anypoint Exchange</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+        </repository>
+        <repository>
+            <id>mulesoft-releases</id>
+            <name>MuleSoft Releases</name>
+            <url>https://repository.mulesoft.org/nexus/repository/releases/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>mulesoft-releases</id>
+            <name>MuleSoft Releases</name>
+            <url>https://repository.mulesoft.org/nexus/repository/releases/</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>

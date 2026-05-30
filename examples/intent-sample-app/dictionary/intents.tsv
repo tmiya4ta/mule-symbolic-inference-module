@@ -1,0 +1,50 @@
+# 意図辞書 — 書式: <INTENT>\t<発話例>
+# 空行と # 始まり行は無視される。
+
+# ORDER_STATUS: 注文状況確認
+ORDER_STATUS	注文の状況を知りたい
+ORDER_STATUS	配送はいつ届きますか
+ORDER_STATUS	私の注文を追跡したい
+ORDER_STATUS	注文はいつ発送されますか
+ORDER_STATUS	配送状況を教えてください
+ORDER_STATUS	荷物の追跡番号を確認したい
+
+# CANCEL: 注文キャンセル
+CANCEL	注文をキャンセルしたい
+CANCEL	やっぱり取り消したい
+CANCEL	オーダーを止めてください
+CANCEL	購入をキャンセルする方法を教えて
+CANCEL	注文の取り消しをお願いします
+CANCEL	キャンセルの手続きを教えてほしい
+
+# RETURN: 返品・返金
+RETURN	商品を返品したい
+RETURN	返金してほしい
+RETURN	届いた品物を返したい
+RETURN	商品を送り返したい
+RETURN	返品の手続きを知りたい
+RETURN	不良品を交換してほしい
+
+# BUSINESS_HOURS: 営業時間
+BUSINESS_HOURS	営業時間を教えて
+BUSINESS_HOURS	何時まで開いていますか
+BUSINESS_HOURS	店は何時から
+BUSINESS_HOURS	閉店時間を知りたい
+BUSINESS_HOURS	開店時間は何時ですか
+BUSINESS_HOURS	営業日はいつですか
+
+# STOCK_CHECK: 在庫確認
+STOCK_CHECK	在庫はありますか
+STOCK_CHECK	この商品はまだ買えますか
+STOCK_CHECK	入荷予定を知りたい
+STOCK_CHECK	商品の在庫を確認したい
+STOCK_CHECK	売り切れていますか
+STOCK_CHECK	在庫切れの場合はいつ入荷しますか
+
+# SHIPPING: 配送手配（日時・個数の指定）
+SHIPPING	指定日に配送してください
+SHIPPING	配送日を予約したい
+SHIPPING	希望日に届けてほしい
+SHIPPING	商品をまとめて発送して
+SHIPPING	個数を指定して配送したい
+SHIPPING	配送日時を指定する
