@@ -1,0 +1,4 @@
+# 同義語レイヤ — 書式: canonical<TAB>variant1,variant2,...（推論前に variant→canonical 正規化）
+出庫	払い出し,払出,ピッキング,搬出
+出荷	発送,出荷手配
+在庫	ストック,手持ち在庫,在庫数

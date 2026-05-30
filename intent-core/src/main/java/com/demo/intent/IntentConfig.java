@@ -22,6 +22,7 @@ public class IntentConfig {
     private final List<IntentExample> examples;
     private final Map<String, Pattern> slotPatterns;
     private final double threshold;
+    private final Map<String, String> synonyms;
 
     /**
      * @param examples     意図例リスト（空でもよい）
@@ -31,9 +32,20 @@ public class IntentConfig {
     public IntentConfig(List<IntentExample> examples,
                         Map<String, Pattern> slotPatterns,
                         double threshold) {
+        this(examples, slotPatterns, threshold, Map.of());
+    }
+
+    /**
+     * @param synonyms 同義語マップ（variant→canonical）。空なら正規化なし。
+     */
+    public IntentConfig(List<IntentExample> examples,
+                        Map<String, Pattern> slotPatterns,
+                        double threshold,
+                        Map<String, String> synonyms) {
         this.examples = List.copyOf(examples);
         this.slotPatterns = Map.copyOf(slotPatterns);
         this.threshold = threshold;
+        this.synonyms = Map.copyOf(synonyms);
     }
 
     /** 意図例リストを返す（変更不可）。 */
@@ -49,6 +61,11 @@ public class IntentConfig {
     /** コサイン類似度の分類閾値を返す。 */
     public double getThreshold() {
         return threshold;
+    }
+
+    /** 同義語マップ（variant→canonical）を返す。空なら正規化なし。 */
+    public Map<String, String> getSynonyms() {
+        return synonyms;
     }
 
     @Override

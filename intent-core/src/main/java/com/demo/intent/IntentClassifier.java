@@ -47,7 +47,11 @@ public class IntentClassifier {
      * @return 構築済み IntentClassifier
      */
     public static IntentClassifier fromConfig(IntentConfig cfg, Tokenizer tok) {
-        IntentModel model = new IntentModel(cfg.getExamples(), tok);
+        Tokenizer effective = tok;
+        if (cfg.getSynonyms() != null && !cfg.getSynonyms().isEmpty()) {
+            effective = new NormalizingTokenizer(tok, new SynonymNormalizer(cfg.getSynonyms()));
+        }
+        IntentModel model = new IntentModel(cfg.getExamples(), effective);
         SlotExtractor slotExtractor = cfg.getSlotPatterns().isEmpty()
             ? null
             : new RegexSlotExtractor(cfg.getSlotPatterns());

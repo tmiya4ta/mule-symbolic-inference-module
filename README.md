@@ -224,6 +224,20 @@ threshold=0.15
 ```
 Raise it if you get false positives; lower it if valid utterances fall through to `UNKNOWN`.
 
+### `synonyms.tsv` — synonym normalization (optional)
+A tiny domain synonym dictionary applied **before** matching, so unseen phrasings are folded onto a
+canonical form. Auto‑loaded when present in `dictionaryDir` / the classpath.
+
+```
+# canonical<TAB>variant1,variant2,...
+出庫	払い出し,払出,ピッキング
+有給休暇	休み,お休み,有休
+```
+- The canonical term must match the vocabulary actually used in `intents.tsv`.
+- In an A/B test on vocabulary‑mismatch paraphrases, adding ~12 lines of synonyms per domain lifted accuracy
+  from 5/11 to **9/11 — beating a 549 MB general embedding (chiVe, 7/11)** while staying deterministic and KB‑sized.
+  See [`examples/dictionaries/`](examples/dictionaries/).
+
 ---
 
 ## Capabilities & limitations

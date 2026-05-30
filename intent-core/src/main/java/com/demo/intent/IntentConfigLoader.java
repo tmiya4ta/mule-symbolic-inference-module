@@ -143,6 +143,49 @@ public class IntentConfigLoader {
     }
 
     // ============================================================
+    // synonyms.tsv パース
+    // ============================================================
+
+    /** synonyms.tsv 形式のストリームから variant→canonical マップを構築する。 */
+    public static Map<String, String> loadSynonyms(InputStream is) throws IOException {
+        return loadSynonyms(new InputStreamReader(is, StandardCharsets.UTF_8));
+    }
+
+    /**
+     * synonyms.tsv 形式のリーダから variant→canonical マップを構築する。
+     * 書式: {@code <canonical>\t<variant1>,<variant2>,...}（空行・# 始まり行は無視）。
+     */
+    public static Map<String, String> loadSynonyms(Reader reader) throws IOException {
+        Map<String, String> result = new LinkedHashMap<>();
+        BufferedReader br = (reader instanceof BufferedReader)
+            ? (BufferedReader) reader
+            : new BufferedReader(reader);
+        String line;
+        while ((line = br.readLine()) != null) {
+            String trimmed = line.trim();
+            if (trimmed.isEmpty() || trimmed.startsWith("#")) {
+                continue;
+            }
+            int tab = trimmed.indexOf('\t');
+            if (tab < 0) {
+                continue;
+            }
+            String canonical = trimmed.substring(0, tab).trim();
+            String variants  = trimmed.substring(tab + 1).trim();
+            if (canonical.isEmpty() || variants.isEmpty()) {
+                continue;
+            }
+            for (String v : variants.split(",")) {
+                String vv = v.trim();
+                if (!vv.isEmpty()) {
+                    result.put(vv, canonical);
+                }
+            }
+        }
+        return result;
+    }
+
+    // ============================================================
     // 統合ロード
     // ============================================================
 
@@ -158,9 +201,22 @@ public class IntentConfigLoader {
     public static IntentConfig load(InputStream intentsStream,
                                     InputStream slotsStream,
                                     InputStream propsStream) throws IOException {
+        return load(intentsStream, slotsStream, propsStream, null);
+    }
+
+    /**
+     * intents/slots/props/synonyms の4ストリームをまとめて読んで {@link IntentConfig} を返す。
+     *
+     * @param synonymsStream synonyms.tsv の InputStream (null なら正規化なし)
+     */
+    public static IntentConfig load(InputStream intentsStream,
+                                    InputStream slotsStream,
+                                    InputStream propsStream,
+                                    InputStream synonymsStream) throws IOException {
         List<IntentExample> examples;
         Map<String, Pattern> slotPatterns;
         double threshold;
+        Map<String, String> synonyms;
 
         try (InputStream is = intentsStream) {
             examples = loadExamples(is);
@@ -180,7 +236,15 @@ public class IntentConfigLoader {
             threshold = DEFAULT_THRESHOLD;
         }
 
-        return new IntentConfig(examples, slotPatterns, threshold);
+        if (synonymsStream != null) {
+            try (InputStream is = synonymsStream) {
+                synonyms = loadSynonyms(is);
+            }
+        } else {
+            synonyms = Map.of();
+        }
+
+        return new IntentConfig(examples, slotPatterns, threshold, synonyms);
     }
 
     // ============================================================
@@ -214,7 +278,13 @@ public class IntentConfigLoader {
             ? IntentConfigLoader.class.getResourceAsStream(propsRes)
             : null;
 
-        return load(intentsStream, slotsStream, propsStream);
+        // intents.tsv と同じディレクトリの synonyms.tsv を任意で読む
+        String synRes = intentsRes.contains("/")
+            ? intentsRes.substring(0, intentsRes.lastIndexOf('/') + 1) + "synonyms.tsv"
+            : "synonyms.tsv";
+        InputStream synStream = IntentConfigLoader.class.getResourceAsStream(synRes);
+
+        return load(intentsStream, slotsStream, propsStream, synStream);
     }
 
     // ============================================================
@@ -241,7 +311,12 @@ public class IntentConfigLoader {
         InputStream propsStream   = Files.exists(propsPath)
             ? Files.newInputStream(propsPath)
             : null;
+        // synonyms.tsv が存在すれば任意で読む（同義語正規化レイヤ）
+        Path synPath = dir.resolve("synonyms.tsv");
+        InputStream synStream = Files.exists(synPath)
+            ? Files.newInputStream(synPath)
+            : null;
 
-        return load(intentsStream, slotsStream, propsStream);
+        return load(intentsStream, slotsStream, propsStream, synStream);
     }
 }
